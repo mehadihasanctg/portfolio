@@ -1,0 +1,120 @@
+export default function Contact() {
+  return (
+    <section
+      id="contact"
+      className="max-w-6xl mx-auto px-6 py-24"
+    >
+      <h2 className="text-4xl font-bold text-center">
+        Contact Me
+      </h2>
+
+      <p className="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
+        Interested in working together? Feel free to reach out through any of
+        the platforms below.
+      </p>
+
+      <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+        <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
+
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
+            Contact Information
+          </h3>
+
+          <div className="space-y-5 text-gray-300">
+
+            <p>
+            📧 <strong>Email:</strong><br />
+            <a
+            href="mailto:limonikonic@gmail.com"
+            className="text-blue-400 hover:underline"
+  >
+            limonikonic@gmail.com
+          </a>
+</p>
+
+            <p>
+  📱 <strong>WhatsApp:</strong><br />
+  <a
+    href="https://wa.me/8801617233445"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:underline"
+  >
+    +8801617233445
+  </a>
+</p>
+            <p>
+  💼 <strong>LinkedIn:</strong><br />
+  <a
+    href="https://www.linkedin.com/in/md-mehadi-hasan-ctg/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:underline"
+  >
+    linkedin.com/in/md-mehadi-hasan-ctg/
+  </a>
+</p>
+
+            <p>
+  💻 <strong>GitHub:</strong><br />
+  <a
+    href="https://github.com/usalimon"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:underline"
+  >
+    github.com/usalimon
+  </a>
+</p>
+
+            <p>
+              📍 <strong>Location:</strong><br />
+              Chattogram, Bangladesh
+            </p>
+
+          </div>
+
+        </div>
+
+        <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
+
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
+            Send a Message
+          </h3>
+
+          <form className="space-y-5">
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+            />
+
+            <textarea
+              rows={5}
+              placeholder="Your Message"
+              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+            />
+
+            <button
+              type="submit"
+              className="w-full rounded-lg bg-blue-600 py-3 font-semibold hover:bg-blue-700 transition"
+            >
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  );
+}
