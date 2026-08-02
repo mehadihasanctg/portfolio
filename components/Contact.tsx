@@ -59,12 +59,12 @@ export default function Contact() {
             <p>
   💻 <strong>GitHub:</strong><br />
   <a
-    href="https://github.com/usalimon"
+    href="https://github.com/mehadihasanctg"
     target="_blank"
     rel="noopener noreferrer"
     className="text-blue-400 hover:underline"
   >
-    github.com/usalimon
+    github.com/mehadihasanctg
   </a>
 </p>
 
