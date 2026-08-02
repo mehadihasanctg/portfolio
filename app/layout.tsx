@@ -27,14 +27,14 @@ export const metadata: Metadata = {
   creator: "Md Mehadi Hasan",
 
   openGraph: {
-    title: "Md Mehadi Hasan | Portfolio",
-    description:
-      "Professional Virtual Assistant, Community Manager & Data Researcher.",
-    url: "https://portfolio-csic.vercel.app",
-    siteName: "Md Mehadi Hasan Portfolio",
-    locale: "en_US",
-    type: "website",
-  },
+  title: "Md Mehadi Hasan | Portfolio",
+  description:
+    "Professional Virtual Assistant, Community Manager & Data Researcher.",
+  url: "https://mehadihasan-portfolio.vercel.app",
+  siteName: "Md Mehadi Hasan Portfolio",
+  locale: "en_US",
+  type: "website",
+},
 
   icons: {
     icon: "/favicon.ico",
