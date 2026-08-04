@@ -1,53 +1,58 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
-import Achievements from "@/components/Achievements";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import FadeIn from "@/components/FadeIn";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import "./globals.css";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Md Mehadi Hasan | Virtual Assistant & Community Manager",
+
+  description:
+    "Professional Virtual Assistant, Community Manager, Data Researcher and Accounts & Finance Professional with 14+ years of experience.",
+
+  keywords: [
+    "Md Mehadi Hasan",
+    "Virtual Assistant",
+    "Community Manager",
+    "Data Researcher",
+    "Lead Generation",
+    "Web Research",
+    "Portfolio",
+    "Bangladesh",
+  ],
+
+  authors: [
+    {
+      name: "Md Mehadi Hasan",
+    },
+  ],
+
+  creator: "Md Mehadi Hasan",
+
+  openGraph: {
+    title: "Md Mehadi Hasan | Portfolio",
+    description:
+      "Professional Virtual Assistant, Community Manager & Data Researcher.",
+    url: "https://mehadihasan-portfolio.vercel.app",
+    siteName: "Md Mehadi Hasan Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <>
-      <Hero />
-
-      <FadeIn delay={0.1}>
-        <About />
-      </FadeIn>
-
-      <FadeIn delay={0.2}>
-        <Skills />
-      </FadeIn>
-
-      <FadeIn delay={0.3}>
-        <Experience />
-      </FadeIn>
-
-      <FadeIn delay={0.4}>
-        <Education />
-      </FadeIn>
-
-      <FadeIn delay={0.5}>
-        <Services />
-      </FadeIn>
-
-      <FadeIn delay={0.6}>
-        <Portfolio />
-      </FadeIn>
-
-      <FadeIn delay={0.7}>
-        <Achievements />
-      </FadeIn>
-
-      <FadeIn delay={0.8}>
-        <Contact />
-      </FadeIn>
-
-      <Footer />
-    </>
+    <html lang="en">
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
   );
 }
