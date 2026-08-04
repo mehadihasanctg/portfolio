@@ -1,18 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Landing() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div>
           <p className="text-blue-400 text-lg font-semibold">
             👋 Available for Remote Work
           </p>
@@ -43,14 +38,9 @@ export default function Landing() {
               Download CV
             </a>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="flex justify-center"
-          initial={{ opacity: 0, x: 60, scale: 0.8 }}
-          animate={{ opacity: 1, x: 0, scale: 1 }}
-          transition={{ duration: 0.9 }}
-        >
+        <div className="flex justify-center">
           <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-blue-500 shadow-2xl">
             <Image
               src="/profile.jpg"
@@ -61,7 +51,7 @@ export default function Landing() {
               priority
             />
           </div>
-        </motion.div>
+        </div>
 
       </div>
 
