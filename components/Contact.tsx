@@ -16,7 +16,6 @@ export default function Contact() {
       <div className="grid md:grid-cols-2 gap-8 mt-16">
 
         {/* Contact Info */}
-
         <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
 
           <h3 className="text-2xl font-semibold text-blue-400 mb-6">
@@ -81,7 +80,6 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-
         <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
 
           <h3 className="text-2xl font-semibold text-blue-400 mb-6">
@@ -99,7 +97,7 @@ export default function Contact() {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500"
             />
 
             <input
@@ -107,7 +105,7 @@ export default function Contact() {
               name="email"
               placeholder="Your Email"
               required
-              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500"
             />
 
             <textarea
@@ -115,12 +113,12 @@ export default function Contact() {
               rows={5}
               placeholder="Your Message"
               required
-              className="w-full rounded-lg bg-black border border-gray-700 p-3 outline-none focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500 resize-none"
             />
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-blue-600 py-3 font-semibold hover:bg-blue-700 transition"
+              className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition"
             >
               Send Message
             </button>

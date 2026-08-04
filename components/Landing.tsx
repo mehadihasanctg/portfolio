@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export default function Landing() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 pt-20">
+    <section
+  id="home"
+  className="relative min-h-screen flex items-center justify-center px-6 pt-20"
+>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         <div>

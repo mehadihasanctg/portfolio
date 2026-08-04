@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -12,15 +13,26 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <Navbar />
+
       <Landing />
+
       <About />
+
       <Skills />
+
       <Experience />
+
       <Education />
+
       <Services />
+
       <Portfolio />
+
       <Achievements />
+
       <Contact />
+
       <Footer />
     </>
   );

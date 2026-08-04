@@ -7,12 +7,12 @@ export default function Navbar() {
         </h1>
 
         <ul className="hidden md:flex gap-8 text-gray-300">
-  <li><a href="#">Home</a></li>
+  <li><a href="#home">Home</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="#services">Services</a></li>
   <li><a href="#portfolio">Portfolio</a></li>
   <li><a href="#skills">Skills</a></li>
-  <li><a href="#">Contact</a></li>
+  <li><a href="#contact">Contact</a></li>
 </ul>
 
         <button className="rounded-lg bg-blue-600 px-5 py-2 font-semibold hover:bg-blue-700">
