@@ -1,34 +1,47 @@
 export default function Portfolio() {
   const projects = [
-    {
-      title: "CoderLegion Community",
-      description:
-        "Managed developer community engagement, content publishing, and platform growth.",
-    },
-    {
-      title: "Job Sourcing & Lead Generation",
-      description:
-        "Daily job hunting, check job hunters working progress and time to time giving update to the owner.",
-    },
-    {
-      title: "Virtual Assistant Support",
-      description:
-        "Handled email management, scheduling, CRM updates, and administrative tasks.",
-    },
-  ];
+  {
+    title: "CoderLegion",
+    role: "Community Manager",
+    description:
+      "Managed a developer-focused community by publishing content, moderating discussions, supporting members, and helping grow the platform.",
+    image: "/coderlegion.png",
+    link: "https://coderlegion.com",
+    featured: true,
+  },
+  {
+    title: "Virtual Assistant Support",
+    role: "Virtual Assistant",
+    description:
+      "Handled email management, scheduling, CRM updates, administrative support, and client communication.",
+    image: "/va.jpg",
+    link: "#",
+    featured: false,
+  },
+  {
+    title: "Lead Generation & Web Research",
+    role: "Lead Generation Specialist",
+    description:
+      "Conducted web research, prospect sourcing, data collection, spreadsheet management, and CRM-ready lead preparation.",
+    image: "/lead.jpg",
+    link: "#",
+    featured: false,
+  },
+];
 
   return (
     <section
       id="portfolio"
       className="max-w-6xl mx-auto px-6 py-24"
     >
-      <h2 className="text-4xl font-bold text-center text-white">
-        Featured Projects
-      </h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-white">
+  Professional Experience
+</h2>
 
-      <p className="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
-        Here are some of the projects and services I have worked on.
-      </p>
+<p className="mt-6 text-center text-slate-400 max-w-3xl mx-auto leading-8">
+  A selection of professional roles where I contributed through community
+  management, virtual assistance, lead generation, and administrative support.
+</p>
 
       <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (

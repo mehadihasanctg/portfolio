@@ -15,15 +15,17 @@ export default function Landing() {
             👋 Available for Remote Work
           </p>
 
-          <h1 className="mt-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-            Md Mehadi Hasan
-          </h1>
+          <h1 className="mt-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+  <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-600 bg-clip-text text-transparent">
+    Md Mehadi Hasan
+  </span>
+</h1>
 
-          <h2 className="mt-4 text-2xl text-gray-400">
-            Virtual Assistant • Data Researcher • Community Manager
-          </h2>
+          <h2 className="mt-5 text-xl md:text-2xl font-medium text-slate-300">
+  Virtual Assistant • Community Manager • Data Researcher
+</h2>
 
-          <p className="mt-6 text-gray-500 leading-8">
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
             I help businesses with virtual assistance, web research,
             data scraping, community management, and workflow automation.
           </p>
