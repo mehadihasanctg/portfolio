@@ -78,4 +78,3 @@ export default function Portfolio() {
     </section>
   );
 }
-</h3>
