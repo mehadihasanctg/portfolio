@@ -8,7 +8,7 @@ export default function Portfolio() {
     {
       title: "Job Sourcing & Lead Generation",
       description:
-        "Daily job hunting, check job hunters working progress and time to time giving update to the owner",
+        "Daily job hunting, check job hunters working progress and time to time giving update to the owner.",
     },
     {
       title: "Virtual Assistant Support",
@@ -18,8 +18,11 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="max-w-6xl mx-auto px-6 py-24">
-      <h2 className="text-4xl font-bold text-center">
+    <section
+      id="portfolio"
+      className="max-w-6xl mx-auto px-6 py-24"
+    >
+      <h2 className="text-4xl font-bold text-center text-white">
         Featured Projects
       </h2>
 
@@ -33,25 +36,33 @@ export default function Portfolio() {
             key={project.title}
             className="rounded-2xl border border-gray-800 bg-gray-900 p-8 transition hover:-translate-y-2 hover:border-blue-500"
           >
-            <h3 className="text-2xl font-semibold">
+            <h3
+  style={{
+    color: "red",
+    fontSize: "32px",
+    fontWeight: "bold",
+  }}
+>
               {project.title}
             </h3>
 
             <p className="mt-4 text-gray-400 leading-7">
               {project.description}
             </p>
-            <div className="mt-6 flex gap-3">
-  <button className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium hover:bg-blue-700">
-    View Project
-  </button>
 
-  <button className="rounded-lg border border-gray-600 px-4 py-2 text-sm font-medium hover:border-blue-500">
-    Details
-  </button>
-</div>
+            <div className="mt-6 flex gap-3">
+              <button className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition">
+                View Project
+              </button>
+
+              <button className="rounded-lg border border-gray-600 px-4 py-2 text-sm font-medium text-white hover:border-blue-500 hover:text-blue-400 transition">
+                Details
+              </button>
+            </div>
           </div>
         ))}
       </div>
     </section>
   );
 }
+</h3>
