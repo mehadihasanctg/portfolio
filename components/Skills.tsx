@@ -1,56 +1,117 @@
 export default function Skills() {
+  const skills = [
+    { name: "Virtual Assistance", level: 96 },
+    { name: "Lead Generation", level: 95 },
+    { name: "Community Management", level: 92 },
+    { name: "Web Research", level: 94 },
+    { name: "Data Entry", level: 95 },
+    { name: "CRM Management", level: 90 },
+  ];
+
+  const tools = [
+    "Microsoft Excel",
+    "Microsoft Word",
+    "Google Sheets",
+    "Google Docs",
+    "ChatGPT",
+    "Gemini",
+    "Canva",
+    "Notion",
+    "Trello",
+    "Slack",
+  ];
+
   return (
-    <section id="skills" className="max-w-6xl mx-auto px-6 py-24">
-      <h2 className="text-4xl font-bold text-center">
-        Skills & Expertise
-      </h2>
+    <section
+      id="skills"
+      className="max-w-6xl mx-auto px-6 py-24"
+    >
+      <div className="text-center">
 
-      <p className="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
-        My core skills developed through years of professional experience.
-      </p>
+        <span className="text-blue-400 font-semibold uppercase tracking-widest">
+          Skills & Expertise
+        </span>
 
-      <div className="grid gap-8 mt-16 md:grid-cols-3">
+        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
+          What I Do Best
+        </h2>
 
-        <div className="rounded-2xl border bborder-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
-          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
-            💼 Virtual Assistance
+        <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-slate-400">
+          My professional skills developed through 14+ years of experience in
+          Accounts & Finance and over 2 years of Virtual Assistance,
+          Community Management, Lead Generation, and Web Research.
+        </p>
+
+      </div>
+
+      <div className="grid gap-12 mt-20 lg:grid-cols-2">
+
+        {/* Left */}
+
+        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+
+          <h3 className="text-2xl font-bold text-white mb-8">
+            Core Skills
           </h3>
 
-          <ul className="space-y-3 text-gray-300">
-            <li>✅ Virtual Assistance</li>
-            <li>✅ Email Management</li>
-            <li>✅ CRM Management</li>
-            <li>✅ Data Entry</li>
-            <li>✅ Calendar Management</li>
-          </ul>
+          <div className="space-y-7">
+
+            {skills.map((skill) => (
+
+              <div key={skill.name}>
+
+                <div className="flex justify-between mb-2">
+
+                  <span className="font-medium text-slate-300">
+                    {skill.name}
+                  </span>
+
+                  <span className="text-blue-400 font-semibold">
+                    {skill.level}%
+                  </span>
+
+                </div>
+
+                <div className="h-3 rounded-full bg-slate-800 overflow-hidden">
+
+                  <div
+                    className="h-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400"
+                    style={{ width: `${skill.level}%` }}
+                  />
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
         </div>
 
-        <div className="rounded-2xl border border-gray-800 bg-gray-900 p-8">
-          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
-            📊 Research
+        {/* Right */}
+
+        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
+
+          <h3 className="text-2xl font-bold text-white mb-8">
+            Tools & Platforms
           </h3>
 
-          <ul className="space-y-3 text-gray-300">
-            <li>✅ Data Research</li>
-            <li>✅ Web Research</li>
-            <li>✅ Internet Research</li>
-            <li>✅ Lead Generation</li>
-            <li>✅ Community Management</li>
-          </ul>
-        </div>
+          <div className="grid grid-cols-2 gap-4">
 
-        <div className="rounded-2xl border border-gray-800 bg-gray-900 p-8">
-          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
-            🛠 Tools
-          </h3>
+            {tools.map((tool) => (
 
-          <ul className="space-y-3 text-gray-300">
-            <li>✅ Microsoft Excel</li>
-            <li>✅ Microsoft Word</li>
-            <li>✅ Google Sheets</li>
-            <li>✅ Google Docs</li>
-            <li>✅ ChatGPT & AI Tools</li>
-          </ul>
+              <div
+                key={tool}
+                className="rounded-xl border border-slate-700 bg-slate-800 p-4 text-center text-slate-300 transition duration-300 hover:border-blue-500 hover:text-white hover:-translate-y-1"
+              >
+                {tool}
+              </div>
+
+            ))}
+
+          </div>
+
         </div>
 
       </div>
