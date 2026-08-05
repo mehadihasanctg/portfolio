@@ -8,14 +8,14 @@ export default function Portfolio() {
       description:
         "Managed a developer-focused community by publishing content, moderating discussions, supporting members, and helping grow the platform.",
       image: "/coderlegion.png",
-      link: "https://coderlegion.com",
+      link: "https://coderlegion.com/user/Mehadi+Hasan",
     },
     {
       title: "Virtual Assistant Support",
       role: "Virtual Assistant",
       description:
         "Handled email management, scheduling, CRM updates, administrative support, and client communication.",
-      image: "/va.jpg",
+      image: "/va.png",
       link: "#",
     },
     {
@@ -23,7 +23,7 @@ export default function Portfolio() {
       role: "Lead Generation Specialist",
       description:
         "Conducted web research, prospect sourcing, data collection, spreadsheet management, and CRM-ready lead preparation.",
-      image: "/lead.jpg",
+      image: "/lead.png",
       link: "#",
     },
   ];
