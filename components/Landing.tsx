@@ -1,72 +1,65 @@
-"use client";
-
-import Image from "next/image";
-
-export default function Landing() {
-  return (
-    <section
-  id="home"
-  className="relative min-h-screen flex items-center justify-center px-6 pt-20"
->
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-        <div>
-          <p className="text-blue-400 text-lg font-semibold">
-            👋 Available for Remote Work
-          </p>
-
-          <h1 className="mt-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-  <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-600 bg-clip-text text-transparent">
-    Md Mehadi Hasan
+<div>
+  <span className="inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
+    👋 Available for Remote Work
   </span>
-</h1>
 
-          <h2 className="mt-5 text-xl md:text-2xl font-medium text-slate-300">
-  Virtual Assistant • Community Manager • Data Researcher
-</h2>
+  <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+    <span className="text-white">Hi, I'm</span>
+    <br />
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
-            I help businesses with virtual assistance, web research,
-            data scraping, community management, and workflow automation.
-          </p>
+    <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
+      Md Mehadi Hasan
+    </span>
+  </h1>
 
-          <div className="mt-8 flex gap-4">
-            <button className="rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700 transition">
-              Hire Me
-            </button>
+  <h2 className="mt-6 text-2xl font-semibold text-slate-300">
+    Virtual Assistant • Community Manager • Lead Generation Specialist
+  </h2>
 
-            <a
-              href="/Md_Mehadi_Hasan_CV.pdf"
-              download
-              className="rounded-lg border border-white px-6 py-3 font-semibold hover:bg-white hover:text-black transition"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
+  <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
+    I help businesses save time and grow faster through reliable virtual
+    assistance, community management, lead generation, web research,
+    CRM management, and administrative support.
+  </p>
 
-        <div className="flex justify-center">
-          <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-blue-500 shadow-2xl">
-            <Image
-              src="/profile.jpg"
-              alt="Md Mehadi Hasan"
-              fill
-              sizes="320px"
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
+  <div className="mt-10 flex flex-wrap gap-4">
+    <a
+      href="#contact"
+      className="rounded-xl bg-blue-600 px-7 py-3 font-semibold text-white transition hover:bg-blue-700"
+    >
+      Hire Me
+    </a>
 
-      </div>
+    <a
+      href="/Md_Mehadi_Hasan_CV.pdf"
+      download
+      className="rounded-xl border border-slate-600 px-7 py-3 font-semibold text-white transition hover:border-blue-500 hover:bg-slate-800"
+    >
+      Download CV
+    </a>
+  </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#about">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-blue-500/30 bg-gray-900/60 backdrop-blur-md">
-            <span className="text-2xl text-blue-400">↓</span>
-          </div>
-        </a>
-      </div>
-    </section>
-  );
-}
+  <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-4 text-center">
+      <h3 className="text-3xl font-bold text-blue-400">14+</h3>
+      <p className="mt-2 text-sm text-slate-400">Years Experience</p>
+    </div>
+
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-4 text-center">
+      <h3 className="text-3xl font-bold text-blue-400">2+</h3>
+      <p className="mt-2 text-sm text-slate-400">Years as VA</p>
+    </div>
+
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-4 text-center">
+      <h3 className="text-3xl font-bold text-blue-400">100%</h3>
+      <p className="mt-2 text-sm text-slate-400">Remote Ready</p>
+    </div>
+
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-4 text-center">
+      <h3 className="text-3xl font-bold text-blue-400">24h</h3>
+      <p className="mt-2 text-sm text-slate-400">Response</p>
+    </div>
+
+  </div>
+</div>

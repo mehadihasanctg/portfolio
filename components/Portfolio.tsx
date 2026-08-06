@@ -1,37 +1,10 @@
 import Image from "next/image";
 
 export default function Portfolio() {
-  const projects = [
-    {
-      title: "CoderLegion",
-      role: "Community Manager",
-      description:
-        "Managed a developer-focused community by publishing content, moderating discussions, supporting members, and helping grow the platform.",
-      image: "/coderlegion.png",
-      link: "https://coderlegion.com/user/Mehadi+Hasan",
-    },
-    {
-      title: "Virtual Assistant Support",
-      role: "Virtual Assistant",
-      description:
-        "Handled email management, scheduling, CRM updates, administrative support, and client communication.",
-      image: "/va.png",
-      link: "#",
-    },
-    {
-      title: "Lead Generation & Web Research",
-      role: "Lead Generation Specialist",
-      description:
-        "Conducted web research, prospect sourcing, data collection, spreadsheet management, and CRM-ready lead preparation.",
-      image: "/lead.png",
-      link: "#",
-    },
-  ];
-
   return (
     <section
       id="portfolio"
-      className="max-w-6xl mx-auto px-6 py-24"
+      className="max-w-7xl mx-auto px-6 py-24"
     >
       <div className="text-center">
         <span className="text-blue-400 uppercase tracking-widest font-semibold">
@@ -43,56 +16,138 @@ export default function Portfolio() {
         </h2>
 
         <p className="mt-6 max-w-3xl mx-auto text-slate-400 leading-8">
-          A selection of professional roles where I contributed through
-          community management, virtual assistance, and lead generation.
+          A summary of my professional work across Community Management,
+          Virtual Assistance, Lead Generation, and Administrative Support.
         </p>
       </div>
 
-      <div className="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <div
-            key={project.title}
-            className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition hover:-translate-y-2 hover:border-blue-500"
-          >
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={600}
-              height={340}
-              className="h-48 w-full object-cover"
-            />
+      {/* Featured Project */}
 
-            <div className="p-6">
-              <p className="text-sm text-blue-400 font-semibold">
-                {project.role}
-              </p>
+      <div className="mt-20 rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl">
 
-              <h3 className="mt-2 text-2xl font-bold text-white">
-                {project.title}
-              </h3>
+        <div className="grid lg:grid-cols-2">
 
-              <p className="mt-4 leading-7 text-slate-400">
-                {project.description}
-              </p>
+          <Image
+            src="/coderlegion.png"
+            alt="CoderLegion"
+            width={900}
+            height={700}
+            className="w-full h-full object-cover"
+          />
 
-              <div className="mt-6 flex gap-3">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition"
-                >
-                  Visit
-                </a>
+          <div className="p-10 flex flex-col justify-center">
 
-                <button className="rounded-lg border border-slate-600 px-4 py-2 text-sm font-medium text-white hover:border-blue-500">
-                  Details
-                </button>
+            <span className="inline-block w-fit rounded-full bg-blue-600 px-4 py-1 text-sm font-semibold text-white">
+              ⭐ Featured Experience
+            </span>
+
+            <h3 className="mt-6 text-4xl font-bold text-white">
+              Community Manager
+            </h3>
+
+            <p className="mt-2 text-blue-400 font-semibold text-lg">
+              CoderLegion
+            </p>
+
+            <p className="mt-6 leading-8 text-slate-300">
+              Managed a developer-focused community by publishing content,
+              moderating discussions, supporting members, encouraging
+              engagement, and helping grow the platform.
+            </p>
+
+            <div className="grid grid-cols-2 gap-4 mt-8">
+
+              <div className="rounded-xl bg-slate-800 p-4">
+                ✅ Community Engagement
               </div>
+
+              <div className="rounded-xl bg-slate-800 p-4">
+                ✅ Content Publishing
+              </div>
+
+              <div className="rounded-xl bg-slate-800 p-4">
+                ✅ Member Support
+              </div>
+
+              <div className="rounded-xl bg-slate-800 p-4">
+                ✅ Platform Growth
+              </div>
+
             </div>
+
+            <a
+              href="https://coderlegion.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 w-fit rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+            >
+              Visit Website →
+            </a>
+
           </div>
-        ))}
+
+        </div>
+
       </div>
+
+      {/* Other Experience */}
+
+      <div className="grid gap-8 mt-14 md:grid-cols-2">
+
+        <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 hover:border-blue-500 transition">
+
+          <Image
+            src="/va.png"
+            alt="Virtual Assistant"
+            width={700}
+            height={400}
+            className="h-56 w-full object-cover"
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-bold text-white">
+              Virtual Assistant
+            </h3>
+
+            <p className="mt-4 text-slate-400 leading-7">
+              Provided remote administrative support including email
+              management, scheduling, CRM updates, documentation,
+              client communication, and daily operational assistance.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div className="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 hover:border-blue-500 transition">
+
+          <Image
+            src="/lead.png"
+            alt="Lead Generation"
+            width={700}
+            height={400}
+            className="h-56 w-full object-cover"
+          />
+
+          <div className="p-6">
+
+            <h3 className="text-2xl font-bold text-white">
+              Lead Generation & Web Research
+            </h3>
+
+            <p className="mt-4 text-slate-400 leading-7">
+              Conducted prospect research, data collection, CRM-ready lead
+              preparation, spreadsheet management, and market research
+              for business growth.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
   );
 }
