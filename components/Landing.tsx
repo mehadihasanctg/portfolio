@@ -8,6 +8,10 @@ export default function Landing() {
       id="home"
       className="relative min-h-screen flex items-center justify-center px-6 pt-20"
     >
+      {/* Background Glow */}
+<div className="absolute left-0 top-20 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+<div className="absolute right-0 bottom-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl"></div>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         <div>
