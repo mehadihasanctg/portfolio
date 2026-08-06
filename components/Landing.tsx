@@ -75,17 +75,30 @@ export default function Landing() {
         </div>
 
         <div className="flex justify-center">
-          <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-blue-500 shadow-2xl">
-            <Image
-  src="/profile.jpg"
-  alt="Md Mehadi Hasan"
-  fill
-  sizes="(max-width: 768px) 320px, 320px"
-  priority
-  className="object-cover"
-/>
-          </div>
-        </div>
+  <div className="relative">
+
+    {/* Blue Glow */}
+    <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl scale-125"></div>
+
+    {/* Animated Ring */}
+    <div className="absolute -inset-2 rounded-full border-2 border-blue-500/30 animate-pulse"></div>
+
+    {/* Image */}
+    <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-blue-500 bg-slate-900 shadow-[0_0_60px_rgba(59,130,246,0.35)]">
+
+      <Image
+        src="/profile.jpg"
+        alt="Md Mehadi Hasan"
+        fill
+        sizes="(max-width:768px) 320px, 320px"
+        priority
+        className="object-cover transition duration-500 hover:scale-105"
+      />
+
+    </div>
+
+  </div>
+</div>
 
       </div>
     </section>
