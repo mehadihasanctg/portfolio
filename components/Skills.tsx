@@ -16,8 +16,7 @@ export default function Skills() {
     "ChatGPT",
     "Gemini",
     "Canva",
-    "Notion",
-    "Trello",
+    "Zulip",
     "Slack",
   ];
 
