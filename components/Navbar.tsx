@@ -19,9 +19,12 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         <a href="#home">
-          <h1 className="text-xl font-bold tracking-wide text-white">
-            Mehadi<span className="text-blue-500">.</span>
-          </h1>
+          <h1 className="text-2xl font-extrabold tracking-wide">
+  <span className="text-white">Md</span>{" "}
+  <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+    Mehadi Hasan
+  </span>
+</h1>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -29,7 +32,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-slate-300 transition hover:text-blue-400"
+              className="relative text-slate-300 font-medium transition duration-300 hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
             >
               {item.name}
             </a>
@@ -38,7 +41,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-flex rounded-xl bg-blue-600 px-5 py-2.5 font-semibold text-white transition hover:bg-blue-700"
+          className="hidden md:inline-flex rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-2.5 font-semibold text-white shadow-lg shadow-blue-500/20 transition duration-300 hover:scale-105"
         >
           Hire Me
         </a>
@@ -47,12 +50,12 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           className="text-white md:hidden"
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
       </div>
 
-      {open && (
-        <div className="border-t border-slate-800 bg-slate-950 md:hidden">
+            {open && (
+        <div className="border-t border-slate-800 bg-slate-900/95 backdrop-blur-xl md:hidden">
           <nav className="flex flex-col p-5">
             {menu.map((item) => (
               <a
