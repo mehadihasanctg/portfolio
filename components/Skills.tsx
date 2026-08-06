@@ -1,11 +1,11 @@
 export default function Skills() {
   const skills = [
-    { name: "Virtual Assistance", level: 96 },
+    { name: "Virtual Assistance", level: 100 },
     { name: "Lead Generation", level: 95 },
-    { name: "Community Management", level: 92 },
-    { name: "Web Research", level: 94 },
-    { name: "Data Entry", level: 95 },
-    { name: "CRM Management", level: 90 },
+    { name: "Community Management", level: 98 },
+    { name: "Web Research", level: 100 },
+    { name: "Data Entry", level: 100 },
+    { name: "CRM Management", level: 95 },
   ];
 
   const tools = [
