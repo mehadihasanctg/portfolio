@@ -1,3 +1,4 @@
+import Certificates from "@/components/Certificates";
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
@@ -29,7 +30,9 @@ export default function Home() {
 
       <Portfolio />
 
-      <Achievements />
+<Certificates />
+
+<Achievements />
 
       <Contact />
 

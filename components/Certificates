@@ -1,0 +1,103 @@
+return (
+  <section className="py-24 bg-red-500">
+    <h1 className="text-5xl text-white">Certificates Section Working</h1>
+  </section>
+);
+export default function Certificates() {
+  const certificates = [
+    {
+      title: "TallyPrime",
+      issuer: "Tally Solutions",
+      year: "2024",
+      file: "/Certificates/tallyprime.pdf",
+    },
+    {
+      title: "AI Certificate",
+      issuer: "Professional Training",
+      year: "2025",
+      file: "/Certificates/aicertificate.pdf",
+    },
+    {
+      title: "10 Minutes Certificate",
+      issuer: "Professional Training",
+      year: "2025",
+      file: "/Certificates/10_minutes_certificate.pdf",
+    },
+    {
+      title: "Communication Skills",
+      issuer: "Professional Training",
+      year: "2024",
+      file: "/Certificates/communication_skills.pdf",
+    },
+    {
+      title: "Logistics Management",
+      issuer: "Professional Training",
+      year: "2023",
+      file: "/Certificates/logistic_management.pdf",
+    },
+    {
+      title: "VAT Certificate",
+      issuer: "Professional Training",
+      year: "2022",
+      file: "/Certificates/vat_certificate.pdf",
+    },
+  ];
+
+  return (
+    <section
+      id="certificates"
+      className="max-w-7xl mx-auto px-6 py-24"
+    >
+      <div className="text-center">
+
+        <span className="text-blue-400 uppercase tracking-[0.3em] font-semibold">
+          Professional Learning
+        </span>
+
+        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
+          Certifications
+        </h2>
+
+        <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-slate-400">
+          Professional certifications that reflect my commitment to continuous
+          learning and skill development.
+        </p>
+
+      </div>
+
+      <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        {certificates.map((cert) => (
+          <div
+            key={cert.title}
+            className="rounded-3xl border border-slate-800 bg-slate-900/80 p-7 transition duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.2)]"
+          >
+
+            <div className="text-5xl">🏆</div>
+
+            <h3 className="mt-6 text-2xl font-bold text-white">
+              {cert.title}
+            </h3>
+
+            <p className="mt-2 text-blue-400">
+              {cert.issuer}
+            </p>
+
+            <p className="mt-2 text-slate-400">
+              {cert.year}
+            </p>
+
+            <a
+              href={cert.file}
+              className="mt-6 inline-flex rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-700"
+            >
+              View Certificate
+            </a>
+
+          </div>
+        ))}
+
+      </div>
+    </section>
+  );
+}
