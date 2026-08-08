@@ -1,45 +1,40 @@
-return (
-  <section className="py-24 bg-red-500">
-    <h1 className="text-5xl text-white">Certificates Section Working</h1>
-  </section>
-);
 export default function Certificates() {
   const certificates = [
     {
       title: "TallyPrime",
       issuer: "Tally Solutions",
       year: "2024",
-      file: "/Certificates/tallyprime.pdf",
+      file: "/certificates/tallyprime.pdf",
     },
     {
       title: "AI Certificate",
       issuer: "Professional Training",
       year: "2025",
-      file: "/Certificates/aicertificate.pdf",
+      file: "/certificates/ai-certificate.pdf",
     },
     {
-      title: "10 Minutes Certificate",
-      issuer: "Professional Training",
-      year: "2025",
-      file: "/Certificates/10_minutes_certificate.pdf",
+      title: "10 Minute School",
+      issuer: "10 Minute School",
+      year: "2024",
+      file: "/certificates/10-minute-school.pdf",
     },
     {
       title: "Communication Skills",
       issuer: "Professional Training",
       year: "2024",
-      file: "/Certificates/communication_skills.pdf",
+      file: "/certificates/communication-skills.pdf",
     },
     {
       title: "Logistics Management",
       issuer: "Professional Training",
-      year: "2023",
-      file: "/Certificates/logistic_management.pdf",
+      year: "2024",
+      file: "/certificates/logistics-management.pdf",
     },
     {
       title: "VAT Certificate",
       issuer: "Professional Training",
-      year: "2022",
-      file: "/Certificates/vat_certificate.pdf",
+      year: "2024",
+      file: "/certificates/vat-certificate.pdf",
     },
   ];
 
@@ -49,8 +44,7 @@ export default function Certificates() {
       className="max-w-7xl mx-auto px-6 py-24"
     >
       <div className="text-center">
-
-        <span className="text-blue-400 uppercase tracking-[0.3em] font-semibold">
+        <span className="text-blue-400 uppercase tracking-widest font-semibold">
           Professional Learning
         </span>
 
@@ -58,45 +52,42 @@ export default function Certificates() {
           Certifications
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-slate-400">
+        <p className="mt-6 max-w-3xl mx-auto text-slate-400">
           Professional certifications that reflect my commitment to continuous
           learning and skill development.
         </p>
-
       </div>
 
       <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-        {certificates.map((cert) => (
+        {certificates.map((certificate) => (
           <div
-            key={cert.title}
-            className="rounded-3xl border border-slate-800 bg-slate-900/80 p-7 transition duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,.2)]"
+            key={certificate.title}
+            className="rounded-2xl border border-slate-800 bg-slate-900 p-7 transition hover:-translate-y-2 hover:border-blue-500"
           >
-
             <div className="text-5xl">🏆</div>
 
             <h3 className="mt-6 text-2xl font-bold text-white">
-              {cert.title}
+              {certificate.title}
             </h3>
 
             <p className="mt-2 text-blue-400">
-              {cert.issuer}
+              {certificate.issuer}
             </p>
 
             <p className="mt-2 text-slate-400">
-              {cert.year}
+              {certificate.year}
             </p>
 
             <a
-              href={cert.file}
-              className="mt-6 inline-flex rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-700"
+              href={certificate.file}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-700"
             >
               View Certificate
             </a>
-
           </div>
         ))}
-
       </div>
     </section>
   );

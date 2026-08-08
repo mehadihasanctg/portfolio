@@ -1,4 +1,4 @@
-import Certificates from "@/components/Certificates";
+import Testimonials from "@/components/Testimonials";
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import Certificates from "@/components/Certificates";
 import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -14,28 +15,31 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <<>
-  <Navbar />
+      <Navbar />
 
-  <Landing />
+      <Landing />
 
-  <About />
+      <About />
 
-  <Skills />
+      <Skills />
 
-  <Experience />
+      <Experience />
 
-  <Education />
+      <Education />
 
-  <Services />
+      <Services />
 
-  <Portfolio />
+      <Portfolio />
 
-  <Certificates />
+      <Certificates />
 
-  <Achievements />
+<Testimonials />
 
-  <Contact />
+<Achievements />
 
-  <Footer />
-</>
+      <Contact />
+
+      <Footer />
+    </>
+  );
+}
