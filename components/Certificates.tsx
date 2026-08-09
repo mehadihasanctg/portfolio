@@ -3,7 +3,7 @@ export default function Certificates() {
     {
       title: "TallyPrime",
       issuer: "Tally Solutions",
-      year: "2024",
+      year: "2022",
       file: "/certificates/tallyprime.pdf",
     },
     {
@@ -21,19 +21,19 @@ export default function Certificates() {
     {
       title: "Communication Skills",
       issuer: "Professional Training",
-      year: "2024",
+      year: "2023",
       file: "/certificates/communication-skills.pdf",
     },
     {
       title: "Logistics Management",
       issuer: "Professional Training",
-      year: "2024",
+      year: "2023",
       file: "/certificates/logistics-management.pdf",
     },
     {
       title: "VAT Certificate",
       issuer: "Professional Training",
-      year: "2024",
+      year: "2023",
       file: "/certificates/vat-certificate.pdf",
     },
   ];
