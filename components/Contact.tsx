@@ -1,116 +1,105 @@
 export default function Contact() {
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-6 py-24">
+    <section id="contact" className="max-w-6xl mx-auto px-6 py-24">
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white">
+        <span className="text-blue-400 uppercase tracking-widest font-semibold">
+          Get In Touch
+        </span>
+
+        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
           Contact Me
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-slate-400">
-          Looking for a reliable Virtual Assistant, Community Manager, or Lead
-          Generation Specialist? Let's connect and discuss how I can help your
-          business grow.
+        <p className="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
+          Interested in working together? Feel free to reach out through any of
+          the platforms below.
         </p>
       </div>
 
-      <div className="mt-16 grid gap-8 lg:grid-cols-2">
-        {/* Contact Info */}
+      <div className="grid md:grid-cols-2 gap-8 mt-16">
 
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-md p-8">
-          <h3 className="text-2xl font-bold text-white">
+        {/* Contact Info */}
+        <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
+
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
             Contact Information
           </h3>
 
-          <div className="mt-8 space-y-6">
+          <div className="space-y-5 text-gray-300">
 
-            <div>
-              <p className="text-sm uppercase tracking-wider text-blue-400">
-                Email
-              </p>
-
+            <p>
+              📧 <strong>Email:</strong><br />
               <a
                 href="mailto:limonikonic@gmail.com"
-                className="mt-1 block text-slate-300 hover:text-blue-400 transition"
+                className="text-blue-400 hover:underline"
               >
                 limonikonic@gmail.com
               </a>
-            </div>
+            </p>
 
-            <div>
-              <p className="text-sm uppercase tracking-wider text-blue-400">
-                WhatsApp
-              </p>
-
+            <p>
+              📱 <strong>WhatsApp:</strong><br />
               <a
                 href="https://wa.me/8801617233445"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block text-slate-300 hover:text-blue-400 transition"
+                className="text-blue-400 hover:underline"
               >
                 +8801617233445
               </a>
-            </div>
+            </p>
 
-            <div>
-              <p className="text-sm uppercase tracking-wider text-blue-400">
-                LinkedIn
-              </p>
-
+            <p>
+              💼 <strong>LinkedIn:</strong><br />
               <a
                 href="https://www.linkedin.com/in/md-mehadi-hasan-ctg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block text-slate-300 hover:text-blue-400 transition"
+                className="text-blue-400 hover:underline"
               >
-                linkedin.com/in/md-mehadi-hasan-ctg
+                linkedin.com/in/md-mehadi-hasan-ctg/
               </a>
-            </div>
+            </p>
 
-            <div>
-              <p className="text-sm uppercase tracking-wider text-blue-400">
-                GitHub
-              </p>
-
+            <p>
+              💼 <strong>Freelancer:</strong><br />
               <a
-                href="https://github.com/mehadihasanctg"
+                href="https://www.freelancer.com.bd/u/mehadilimon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block text-slate-300 hover:text-blue-400 transition"
+                className="text-blue-400 hover:underline"
               >
-                github.com/mehadihasanctg
+                freelancer.com/u/mehadilimon
               </a>
-            </div>
+            </p>
 
-            <div>
-              <p className="text-sm uppercase tracking-wider text-blue-400">
-                Location
-              </p>
+            <p>
+              📍 <strong>Location:</strong><br />
+              Chattogram, Bangladesh
+            </p>
 
-              <p className="mt-1 text-slate-300">
-                Chattogram, Bangladesh
-              </p>
-            </div>
           </div>
         </div>
 
         {/* Contact Form */}
+        <div className="rounded-2xl border border-blue-500/20 bg-gray-900/60 backdrop-blur-md p-8">
 
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/80 backdrop-blur-md p-8">
-          <h3 className="text-2xl font-bold text-white">
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">
             Send a Message
           </h3>
 
           <form
             action="https://formspree.io/f/mgoggybd"
             method="POST"
-            className="mt-8 space-y-5"
+            className="space-y-5"
           >
+
             <input
               type="text"
               name="name"
               placeholder="Your Name"
               required
-              className="w-full rounded-xl border border-slate-700 bg-slate-950 p-4 text-white placeholder-slate-500 outline-none transition focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500"
             />
 
             <input
@@ -118,25 +107,28 @@ export default function Contact() {
               name="email"
               placeholder="Your Email"
               required
-              className="w-full rounded-xl border border-slate-700 bg-slate-950 p-4 text-white placeholder-slate-500 outline-none transition focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500"
             />
 
             <textarea
               name="message"
-              rows={6}
+              rows={5}
               placeholder="Your Message"
               required
-              className="w-full resize-none rounded-xl border border-slate-700 bg-slate-950 p-4 text-white placeholder-slate-500 outline-none transition focus:border-blue-500"
+              className="w-full rounded-lg bg-gray-900 border border-gray-700 p-3 text-white placeholder-gray-400 caret-white outline-none focus:border-blue-500 resize-none"
             />
 
             <button
               type="submit"
-              className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 py-4 font-semibold text-white transition duration-300 hover:scale-[1.02]"
+              className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 transition"
             >
               Send Message
             </button>
+
           </form>
+
         </div>
+
       </div>
     </section>
   );
